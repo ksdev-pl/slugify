@@ -7,8 +7,14 @@ Create a URL/filesystem-friendly version of a string.
 
 ## Install
 
+Via Maven
+
 ```
-TODO
+<dependency>
+  <groupId>pl.ksdev</groupId>
+  <artifactId>slugify</artifactId>
+  <version>0.1-SNAPSHOT</version>
+</dependency>
 ```
 
 ## Usage

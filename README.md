@@ -1,6 +1,6 @@
 # slugify
 
-[![Software License][ico-license]](LICENSE.md)
+[![Software License][ico-license]](LICENSE)
 [![Build Status][ico-travis]][link-travis]
 
 Create a URL/filesystem-friendly version of a string.
@@ -20,7 +20,7 @@ System.out.println(result); // "zazolc-gesla-jazn"
 ```
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/ksdev-pl/slugify/master.svg?style=flat-square

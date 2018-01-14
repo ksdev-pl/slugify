@@ -20,6 +20,13 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>ksdev</name>
+            <email>kontakt@ksdev.pl</email>
+        </developer>
+    </developers>
+
     <scm>
         <url>https://github.com/ksdev-pl/slugify</url>
         <connection>scm:git:git@github.com:ksdev-pl/slugify.git</connection>
@@ -44,5 +51,27 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     
 </project>

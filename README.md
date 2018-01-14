@@ -23,6 +23,6 @@ System.out.println(result);
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/:vendor/slugify/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/ksdev-pl/slugify/master.svg?style=flat-square
 
-[link-travis]: https://travis-ci.org/:vendor/slugify
+[link-travis]: https://travis-ci.org/ksdev-pl/slugify

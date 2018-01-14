@@ -28,6 +28,7 @@ SlugService slugService = new SimpleSlugService(5);         // Adds a max slug l
 String result = slugService.slugify("1234567890");
 System.out.println(result);                                 // "12345"
 ```
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.

@@ -13,7 +13,7 @@ Via Maven
 <dependency>
   <groupId>pl.ksdev</groupId>
   <artifactId>slugify</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
 </dependency>
 ```
 

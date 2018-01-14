@@ -9,7 +9,7 @@ Create a URL/filesystem-friendly version of a string.
 
 Via Maven
 
-```
+```xml
 <dependency>
   <groupId>pl.ksdev</groupId>
   <artifactId>slugify</artifactId>
@@ -19,7 +19,7 @@ Via Maven
 
 ## Usage
 
-``` java
+```java
 SlugService slugService = new SimpleSlugService();
 String result = slugService.slugify("Zażółć gęślą jaźń");
 System.out.println(result);                                 // "zazolc-gesla-jazn"

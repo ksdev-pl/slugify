@@ -16,7 +16,7 @@ TODO
 ``` java
 SlugService slugService = new SimpleSlugService();
 String result = slugService.slugify("Zażółć gęślą jaźń");
-System.out.println(result);
+System.out.println(result); // "zazolc-gesla-jazn"
 ```
 ## License
 

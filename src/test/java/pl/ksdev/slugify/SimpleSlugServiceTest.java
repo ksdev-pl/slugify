@@ -69,10 +69,7 @@ public class SimpleSlugServiceTest {
 
         // then
         assertEquals(result1.length(), 5);
-        assertEquals(
-            result2.length(),
-            SimpleSlugService.DEFAULT_MAX_SLUG_LENGTH
-        );
+        assertEquals(result2.length(), 200);
     }
 
     @Test

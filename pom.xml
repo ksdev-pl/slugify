@@ -26,6 +26,11 @@
         <developerConnection>scm:git:git@github.com:ksdev-pl/slugify.git</developerConnection>
     </scm>
 
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/ksdev-pl/slugify/issues</url>
+    </issueManagement>
+
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>

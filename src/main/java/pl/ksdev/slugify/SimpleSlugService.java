@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class SimpleSlugService implements SlugService {
 
-    public static final int DEFAULT_MAX_SLUG_LENGTH = 200;
+    private static final int DEFAULT_MAX_SLUG_LENGTH = 200;
 
     private final int maxSlugLength;
 

@@ -15,7 +15,11 @@ public class SimpleSlugService implements SlugService {
     static {
         charReplMap = new HashMap<>();
 
-        charReplMap.put(' ', "-");
+        charReplMap.put((char) 32, "-");
+        charReplMap.put((char) 160, "-");
+        charReplMap.put('\t', "-");
+        charReplMap.put('\n', "-");
+        charReplMap.put('\r', "-");
         charReplMap.put('-', "-");
         charReplMap.put('_', "-");
         charReplMap.put('.', "-");
@@ -209,7 +213,7 @@ public class SimpleSlugService implements SlugService {
 
     /**
      * @param maxSlugLength max length of the resultant slug {@code String}
-     *     (default = {@link SimpleSlugService#DEFAULT_MAX_SLUG_LENGTH}).
+     *                      (default = {@link #DEFAULT_MAX_SLUG_LENGTH}).
      */
     public SimpleSlugService(int maxSlugLength) {
         if (maxSlugLength <= 0) {

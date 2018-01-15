@@ -14,16 +14,21 @@ public class SimpleSlugServiceTest {
     @Test
     public void shouldReturnSlugifiedString() {
         // given
-        String text = " # !@ $ ZażóŁć Gęślą jaźŃ Лорем ипсум ; : > < / \\ . *" +
-            " % $ file.java Dès Noël où un zéphyr ABCDEFGHIJKLMNOPQRSTUVWXYZ " +
-            "0123456789 # *(@# # @ œžŸ ¡¢£ ¤¥ ¦ § ";
+        String text1 = "Zażółć" + (char) 32 + "gęślą" + (char) 160 + "jaźń";
+        String text2 = " # !@ $ ZażóŁć\tGęślą jaźŃ Лорем ипсум ; : > < / \\ ." +
+            " * % $ file.java\rDès Noël où un zéphyr\nABCDEFGHIJKLMNOPQRSTUVW" +
+            "XYZ 0123456789 # *(@# # @ œžŸ ¡¢£ ¤¥ ¦ § ";
+
+        SlugService slugService = new SimpleSlugService();
 
         // when
-        String result = new SimpleSlugService().slugify(text);
+        String result1 = slugService.slugify(text1);
+        String result2 = slugService.slugify(text2);
 
         // then
+        assertEquals("zazolc-gesla-jazn", result1);
         assertEquals("zazolc-gesla-jazn-lorem-ipsum-file-java-des-noel-ou-un-" +
-            "zephyr-abcdefghijklmnopqrstuvwxyz-0123456789-oezy", result);
+            "zephyr-abcdefghijklmnopqrstuvwxyz-0123456789-oezy", result2);
     }
 
     @Test

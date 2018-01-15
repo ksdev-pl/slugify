@@ -18,6 +18,12 @@ Via Maven
 </dependency>
 ```
 
+Via Gradle
+
+```groovy
+compile 'pl.ksdev:slugify:0.2'
+```
+
 ## Usage
 
 ```java

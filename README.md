@@ -36,7 +36,7 @@ The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/ksdev-pl/slugify/master.svg?style=flat-square
-[ico-maven]: https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/pl/ksdev/slugify/maven-metadata.xml.svg
+[ico-maven]: https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/pl/ksdev/slugify/maven-metadata.xml.svg?style=flat-square
 
 [link-travis]: https://travis-ci.org/ksdev-pl/slugify
 [link-maven]: http://search.maven.org/#artifactdetails%7Cpl.ksdev%7Cslugify%7C0.1%7Cjar

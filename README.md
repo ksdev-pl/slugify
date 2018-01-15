@@ -29,12 +29,10 @@ compile 'pl.ksdev:slugify:0.2'
 
 ```java
 SlugService slugService = new SimpleSlugService();
-String result = slugService.slugify("Zażółć gęślą jaźń");
-System.out.println(result);                                 // "zazolc-gesla-jazn"
+String result = slugService.slugify("Zażółć gęślą jaźń");   // result = "zazolc-gesla-jazn"
 
-SlugService slugService = new SimpleSlugService(5);         // Adds a max slug length (default = 200)
-String result = slugService.slugify("1234567890");
-System.out.println(result);                                 // "12345"
+SlugService slugService = new SimpleSlugService(5);         // adds a max slug length (default = 200)
+String result = slugService.slugify("1234567890");          // result = "12345"
 ```
 
 ## License

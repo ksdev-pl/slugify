@@ -217,9 +217,7 @@ public class SimpleSlugService implements SlugService {
      */
     public SimpleSlugService(int maxSlugLength) {
         if (maxSlugLength <= 0) {
-            throw new IllegalArgumentException(
-                "maxSlugLength must be greater than zero"
-            );
+            throw new IllegalArgumentException("maxSlugLength must be > 0");
         }
 
         this.maxSlugLength = maxSlugLength;
@@ -253,13 +251,11 @@ public class SimpleSlugService implements SlugService {
         }
 
         // Trim dashes
-        if (slug.length() > 0) {
-            if (slug.charAt(0) == '-') {
-                slug.deleteCharAt(0);
-            }
-            if (slug.charAt(slug.length() - 1) == '-') {
-                slug.deleteCharAt(slug.length() - 1);
-            }
+        if (slug.length() > 0 && slug.charAt(0) == '-') {
+            slug.deleteCharAt(0);
+        }
+        if (slug.length() > 0 && slug.charAt(slug.length() - 1) == '-') {
+            slug.deleteCharAt(slug.length() - 1);
         }
 
         return slug.toString();

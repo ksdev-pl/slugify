@@ -15,14 +15,14 @@ Via Maven
 <dependency>
   <groupId>pl.ksdev</groupId>
   <artifactId>slugify</artifactId>
-  <version>0.2</version>
+  <version>0.3</version>
 </dependency>
 ```
 
 Via Gradle
 
 ```groovy
-compile 'pl.ksdev:slugify:0.2'
+compile 'pl.ksdev:slugify:0.3'
 ```
 
 ## Usage
@@ -45,5 +45,5 @@ The MIT License (MIT). Please see [License File](LICENSE) for more information.
 [ico-coveralls]: https://img.shields.io/coveralls/github/ksdev-pl/slugify.svg?style=flat-square
 
 [link-travis]: https://travis-ci.org/ksdev-pl/slugify
-[link-maven]: http://search.maven.org/#artifactdetails%7Cpl.ksdev%7Cslugify%7C0.2%7Cjar
+[link-maven]: http://search.maven.org/#artifactdetails%7Cpl.ksdev%7Cslugify%7C0.3%7Cjar
 [link-coveralls]: https://coveralls.io/github/ksdev-pl/slugify?branch=master
